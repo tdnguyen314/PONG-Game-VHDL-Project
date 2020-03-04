@@ -1,0 +1,799 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: TOPLEVEL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOPLEVEL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOPLEVEL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : TOPLEVEL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Initialization.vhd" in Library work.
+Architecture gameparameters of Entity gameparameters is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Clock_Divider.vhd" in Library work.
+Architecture behavioral of Entity clockdivider is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Row_Column_Counter.vhd" in Library work.
+Architecture behavioral of Entity row_column_counter is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/VGA_Timing.vhd" in Library work.
+Architecture behavioral of Entity videosync is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Court_Display.vhd" in Library work.
+Architecture behavioral of Entity court_display is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Wall_Display.vhd" in Library work.
+Architecture behavioral of Entity wall_display is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Bat_Display.vhd" in Library work.
+Architecture behavioral of Entity bat_display is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Bat_Logic.vhd" in Library work.
+Entity <bat_logic> compiled.
+Entity <bat_logic> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Ball_Display.vhd" in Library work.
+Architecture behavioral of Entity ball_display is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Ball_Logic.vhd" in Library work.
+Architecture behavioral of Entity ball_logic is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Score_Display.vhd" in Library work.
+Architecture behavioral of Entity score_display is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/State_Machine.vhd" in Library work.
+Architecture behavioral of Entity state_machine is up to date.
+Compiling vhdl file "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/TOPLEVEL.vhd" in Library work.
+Architecture behavioral of Entity toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOPLEVEL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ClockDivider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Row_Column_Counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <VideoSync> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <COURT_DISPLAY> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <WALL_DISPLAY> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BAT_DISPLAY> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BAT_LOGIC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BALL_DISPLAY> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BALL_LOGIC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Score_Display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <State_Machine> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TOPLEVEL> in library <work> (Architecture <behavioral>).
+Entity <TOPLEVEL> analyzed. Unit <TOPLEVEL> generated.
+
+Analyzing Entity <ClockDivider> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKDLLE_inst> in unit <ClockDivider>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLLE_inst> in unit <ClockDivider>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <CLKDLLE_inst> in unit <ClockDivider>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLLE_inst> in unit <ClockDivider>.
+Entity <ClockDivider> analyzed. Unit <ClockDivider> generated.
+
+Analyzing Entity <Row_Column_Counter> in library <work> (Architecture <behavioral>).
+Entity <Row_Column_Counter> analyzed. Unit <Row_Column_Counter> generated.
+
+Analyzing Entity <VideoSync> in library <work> (Architecture <behavioral>).
+Entity <VideoSync> analyzed. Unit <VideoSync> generated.
+
+Analyzing Entity <COURT_DISPLAY> in library <work> (Architecture <behavioral>).
+Entity <COURT_DISPLAY> analyzed. Unit <COURT_DISPLAY> generated.
+
+Analyzing Entity <WALL_DISPLAY> in library <work> (Architecture <behavioral>).
+Entity <WALL_DISPLAY> analyzed. Unit <WALL_DISPLAY> generated.
+
+Analyzing Entity <BAT_DISPLAY> in library <work> (Architecture <behavioral>).
+Entity <BAT_DISPLAY> analyzed. Unit <BAT_DISPLAY> generated.
+
+Analyzing Entity <BAT_LOGIC> in library <work> (Architecture <behavioral>).
+Entity <BAT_LOGIC> analyzed. Unit <BAT_LOGIC> generated.
+
+Analyzing Entity <BALL_DISPLAY> in library <work> (Architecture <behavioral>).
+Entity <BALL_DISPLAY> analyzed. Unit <BALL_DISPLAY> generated.
+
+Analyzing Entity <BALL_LOGIC> in library <work> (Architecture <behavioral>).
+Entity <BALL_LOGIC> analyzed. Unit <BALL_LOGIC> generated.
+
+Analyzing Entity <Score_Display> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <Score_right_sig> in unit <Score_Display> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <Score_Display> analyzed. Unit <Score_Display> generated.
+
+Analyzing Entity <State_Machine> in library <work> (Architecture <behavioral>).
+Entity <State_Machine> analyzed. Unit <State_Machine> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Row_Column_Counter>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Row_Column_Counter.vhd".
+    Found 10-bit up counter for signal <Column_cnt>.
+    Found 9-bit up counter for signal <Row_cnt>.
+    Summary:
+	inferred   2 Counter(s).
+Unit <Row_Column_Counter> synthesized.
+
+
+Synthesizing Unit <VideoSync>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/VGA_Timing.vhd".
+    Found 1-bit register for signal <blank_sig>.
+    Found 11-bit comparator greater for signal <blank_sig$cmp_gt0000> created at line 33.
+    Found 10-bit comparator greater for signal <blank_sig$cmp_gt0001> created at line 33.
+    Found 11-bit comparator less for signal <blank_sig$cmp_lt0000> created at line 33.
+    Found 1-bit register for signal <hSync_sig>.
+    Found 11-bit comparator greatequal for signal <hSync_sig$cmp_ge0000> created at line 47.
+    Found 11-bit comparator less for signal <hSync_sig$cmp_lt0000> created at line 47.
+    Found 1-bit register for signal <vSync_sig>.
+    Found 10-bit comparator greatequal for signal <vSync_sig$cmp_ge0000> created at line 61.
+    Found 10-bit comparator less for signal <vSync_sig$cmp_lt0000> created at line 61.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+Unit <VideoSync> synthesized.
+
+
+Synthesizing Unit <COURT_DISPLAY>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Court_Display.vhd".
+    Found 3-bit register for signal <Colour_s>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <COURT_DISPLAY> synthesized.
+
+
+Synthesizing Unit <WALL_DISPLAY>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Wall_Display.vhd".
+    Found 1-bit register for signal <NetSig>.
+    Found 1-bit register for signal <TopWall>.
+    Found 1-bit register for signal <BottomWall>.
+    Found 1-bit register for signal <RightWall>.
+    Found 1-bit register for signal <LeftWall>.
+    Found 11-bit comparator greatequal for signal <NetSig$cmp_ge0000> created at line 38.
+    Found 10-bit comparator greatequal for signal <NetSig$cmp_ge0001> created at line 45.
+    Found 11-bit comparator greatequal for signal <NetSig$cmp_ge0002> created at line 48.
+    Found 10-bit comparator lessequal for signal <NetSig$cmp_le0000> created at line 42.
+    Found 11-bit comparator less for signal <NetSig$cmp_lt0000> created at line 38.
+    Found 11-bit comparator less for signal <NetSig$cmp_lt0001> created at line 39.
+    Found 10-bit comparator less for signal <NetSig$cmp_lt0002> created at line 45.
+    Found 11-bit comparator less for signal <NetSig$cmp_lt0003> created at line 48.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+Unit <WALL_DISPLAY> synthesized.
+
+
+Synthesizing Unit <BAT_DISPLAY>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Bat_Display.vhd".
+    Found 1-bit register for signal <RightBat>.
+    Found 1-bit register for signal <LeftBat>.
+    Found 10-bit adder for signal <LeftBat$add0000> created at line 29.
+    Found 11-bit comparator greater for signal <LeftBat$cmp_gt0000> created at line 29.
+    Found 10-bit comparator greater for signal <LeftBat$cmp_gt0001> created at line 29.
+    Found 11-bit comparator less for signal <LeftBat$cmp_lt0000> created at line 29.
+    Found 10-bit comparator less for signal <LeftBat$cmp_lt0001> created at line 29.
+    Found 10-bit adder for signal <RightBat$addsub0000> created at line 31.
+    Found 11-bit comparator greater for signal <RightBat$cmp_gt0000> created at line 31.
+    Found 10-bit comparator greater for signal <RightBat$cmp_gt0001> created at line 31.
+    Found 11-bit comparator less for signal <RightBat$cmp_lt0000> created at line 31.
+    Found 10-bit comparator less for signal <RightBat$cmp_lt0001> created at line 31.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <BAT_DISPLAY> synthesized.
+
+
+Synthesizing Unit <BAT_LOGIC>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Bat_Logic.vhd".
+    Found 10-bit updown counter for signal <LeftBatCount>.
+    Found 11-bit comparator greatequal for signal <LeftBatCount$cmp_ge0000> created at line 39.
+    Found 11-bit comparator lessequal for signal <LeftBatCount$cmp_le0000> created at line 44.
+    Found 10-bit updown counter for signal <RightBatCount>.
+    Found 11-bit comparator greatequal for signal <RightBatCount$cmp_ge0000> created at line 49.
+    Found 11-bit comparator lessequal for signal <RightBatCount$cmp_le0000> created at line 56.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   4 Comparator(s).
+Unit <BAT_LOGIC> synthesized.
+
+
+Synthesizing Unit <BALL_DISPLAY>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Ball_Display.vhd".
+    Found 1-bit register for signal <Ball>.
+    Found 10-bit subtractor for signal <Ball$addsub0000> created at line 27.
+    Found 10-bit adder for signal <Ball$addsub0001> created at line 27.
+    Found 9-bit subtractor for signal <Ball$addsub0002> created at line 27.
+    Found 10-bit subtractor for signal <Ball$addsub0003> created at line 27.
+    Found 10-bit adder for signal <Ball$addsub0004> created at line 27.
+    Found 9-bit subtractor for signal <Ball$addsub0005> created at line 27.
+    Found 10-bit subtractor for signal <Ball$addsub0006> created at line 27.
+    Found 10-bit adder for signal <Ball$addsub0007> created at line 27.
+    Found 9-bit subtractor for signal <Ball$addsub0008> created at line 27.
+    Found 10-bit subtractor for signal <Ball$addsub0009> created at line 27.
+    Found 10-bit adder for signal <Ball$addsub0010> created at line 27.
+    Found 9-bit subtractor for signal <Ball$addsub0011> created at line 27.
+    Found 9-bit subtractor for signal <Ball$addsub0012> created at line 27.
+    Found 9-bit adder for signal <Ball$addsub0013> created at line 27.
+    Found 9-bit adder for signal <Ball$addsub0014> created at line 27.
+    Found 9-bit adder for signal <Ball$addsub0015> created at line 27.
+    Found 9-bit adder for signal <Ball$addsub0016> created at line 27.
+    Found 9-bit adder for signal <Ball$addsub0017> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0000> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0001> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0002> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0003> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0004> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0005> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0006> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0007> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0008> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0009> created at line 27.
+    Found 9-bit comparator equal for signal <Ball$cmp_eq0010> created at line 27.
+    Found 10-bit comparator greatequal for signal <Ball$cmp_ge0000> created at line 27.
+    Found 10-bit comparator greatequal for signal <Ball$cmp_ge0001> created at line 27.
+    Found 10-bit comparator greatequal for signal <Ball$cmp_ge0002> created at line 27.
+    Found 10-bit comparator greatequal for signal <Ball$cmp_ge0003> created at line 27.
+    Found 10-bit comparator lessequal for signal <Ball$cmp_le0000> created at line 27.
+    Found 10-bit comparator lessequal for signal <Ball$cmp_le0001> created at line 27.
+    Found 10-bit comparator lessequal for signal <Ball$cmp_le0002> created at line 27.
+    Found 10-bit comparator lessequal for signal <Ball$cmp_le0003> created at line 27.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred  19 Comparator(s).
+Unit <BALL_DISPLAY> synthesized.
+
+
+Synthesizing Unit <BALL_LOGIC>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Ball_Logic.vhd".
+    Found 10-bit register for signal <x_count>.
+    Found 10-bit addsub for signal <x_count$share0000> created at line 43.
+    Found 9-bit register for signal <y_count>.
+    Found 9-bit addsub for signal <y_count$share0000> created at line 43.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <BALL_LOGIC> synthesized.
+
+
+Synthesizing Unit <Score_Display>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Score_Display.vhd".
+    Found 8x24-bit ROM for signal <$rom0000>.
+    Found 16x6-bit ROM for signal <Score_left_decoded$mux0004> created at line 50.
+    Found 8x24-bit ROM for signal <$rom0001>.
+    Found 16x6-bit ROM for signal <Score_right_decoded$mux0004> created at line 63.
+    Found 1-bit register for signal <Score_left_sig>.
+    Found 10-bit subtractor for signal <index_c$sub0000> created at line 80.
+    Found 10-bit subtractor for signal <index_c$sub0001> created at line 88.
+    Found 9-bit subtractor for signal <index_r$sub0000> created at line 79.
+    Found 6-bit 7-to-1 multiplexer for signal <Score_left_decoded$mux0000> created at line 82.
+    Found 10-bit comparator greatequal for signal <Score_left_sig$cmp_ge0000> created at line 77.
+    Found 9-bit comparator greatequal for signal <Score_left_sig$cmp_ge0001> created at line 77.
+    Found 10-bit comparator greatequal for signal <Score_left_sig$cmp_ge0002> created at line 83.
+    Found 10-bit comparator lessequal for signal <Score_left_sig$cmp_le0000> created at line 77.
+    Found 9-bit comparator lessequal for signal <Score_left_sig$cmp_le0001> created at line 77.
+    Found 10-bit comparator lessequal for signal <Score_left_sig$cmp_le0002> created at line 83.
+    Found 6-bit 7-to-1 multiplexer for signal <Score_right_decoded$mux0000> created at line 90.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <Score_Display> synthesized.
+
+
+Synthesizing Unit <State_Machine>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/State_Machine.vhd".
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 34                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 6                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit up counter for signal <l_score>.
+    Found 4-bit up counter for signal <r_score>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+Unit <State_Machine> synthesized.
+
+
+Synthesizing Unit <ClockDivider>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/Clock_Divider.vhd".
+    Found 1-bit register for signal <ballClkEn>.
+    Found 1-bit register for signal <batClkEn>.
+    Found 18-bit up counter for signal <ballClkDivider>.
+    Found 18-bit comparator greatequal for signal <ballClkDivider$cmp_ge0000> created at line 56.
+    Found 18-bit up counter for signal <batClkDivider>.
+    Found 18-bit comparator greatequal for signal <batClkDivider$cmp_ge0000> created at line 41.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <ClockDivider> synthesized.
+
+
+Synthesizing Unit <TOPLEVEL>.
+    Related source file is "//hwnc2-stdhome2/stdhome2/users/1705407/HET6004/LAB2/Pong_2/TOPLEVEL.vhd".
+Unit <TOPLEVEL> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 16x6-bit ROM                                          : 2
+ 8x24-bit ROM                                          : 2
+# Adders/Subtractors                                   : 25
+ 10-bit adder                                          : 6
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 6
+ 9-bit adder                                           : 5
+ 9-bit addsub                                          : 1
+ 9-bit subtractor                                      : 6
+# Counters                                             : 8
+ 10-bit up counter                                     : 1
+ 10-bit updown counter                                 : 2
+ 18-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 17
+ 1-bit register                                        : 14
+ 10-bit register                                       : 1
+ 3-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 54
+ 10-bit comparator greatequal                          : 8
+ 10-bit comparator greater                             : 3
+ 10-bit comparator less                                : 4
+ 10-bit comparator lessequal                           : 7
+ 11-bit comparator greatequal                          : 5
+ 11-bit comparator greater                             : 3
+ 11-bit comparator less                                : 7
+ 11-bit comparator lessequal                           : 2
+ 18-bit comparator greatequal                          : 2
+ 9-bit comparator equal                                : 11
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 6-bit 7-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <State_Machine_Block/State/FSM> on signal <State[1:4]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ idle           | 0000
+ idle_low       | 0001
+ start_left     | 0010
+ start_left_low | 0011
+ leftup         | 0100
+ rightup        | 0101
+ leftdown       | 0110
+ rightdown      | 0111
+ finish         | 1000
+ left_score     | 1001
+ right_score    | 1010
+----------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 4
+ 16x6-bit ROM                                          : 2
+ 8x24-bit ROM                                          : 2
+# Adders/Subtractors                                   : 25
+ 10-bit adder                                          : 6
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 4
+ 3-bit subtractor                                      : 3
+ 9-bit adder                                           : 5
+ 9-bit addsub                                          : 1
+ 9-bit subtractor                                      : 5
+# Counters                                             : 8
+ 10-bit up counter                                     : 1
+ 10-bit updown counter                                 : 2
+ 18-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 9-bit up counter                                      : 1
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+# Comparators                                          : 54
+ 10-bit comparator greatequal                          : 8
+ 10-bit comparator greater                             : 3
+ 10-bit comparator less                                : 4
+ 10-bit comparator lessequal                           : 7
+ 11-bit comparator greatequal                          : 5
+ 11-bit comparator greater                             : 3
+ 11-bit comparator less                                : 7
+ 11-bit comparator lessequal                           : 2
+ 18-bit comparator greatequal                          : 2
+ 9-bit comparator equal                                : 11
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 6-bit 7-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TOPLEVEL> ...
+
+Optimizing unit <COURT_DISPLAY> ...
+
+Optimizing unit <BAT_DISPLAY> ...
+
+Optimizing unit <BAT_LOGIC> ...
+
+Optimizing unit <BALL_DISPLAY> ...
+
+Optimizing unit <Score_Display> ...
+
+Optimizing unit <State_Machine> ...
+
+Optimizing unit <ClockDivider> ...
+
+Optimizing unit <BALL_LOGIC> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOPLEVEL, actual ratio is 8.
+FlipFlop Ball_Logic_Block/x_count_2 has been replicated 1 time(s)
+FlipFlop Ball_Logic_Block/y_count_2 has been replicated 1 time(s)
+FlipFlop Ball_Logic_Block/y_count_3 has been replicated 1 time(s)
+FlipFlop State_Machine_Block/r_score_0 has been replicated 1 time(s)
+FlipFlop State_Machine_Block/r_score_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 128
+ Flip-Flops                                            : 128
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOPLEVEL.ngr
+Top Level Output File Name         : TOPLEVEL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 1346
+#      GND                         : 1
+#      INV                         : 65
+#      LUT1                        : 73
+#      LUT2                        : 146
+#      LUT2_D                      : 2
+#      LUT2_L                      : 8
+#      LUT3                        : 150
+#      LUT3_D                      : 7
+#      LUT3_L                      : 3
+#      LUT4                        : 241
+#      LUT4_D                      : 7
+#      LUT4_L                      : 15
+#      MULT_AND                    : 18
+#      MUXCY                       : 361
+#      MUXF5                       : 36
+#      MUXF6                       : 6
+#      VCC                         : 1
+#      XORCY                       : 206
+# FlipFlops/Latches                : 128
+#      FDC                         : 63
+#      FDCE                        : 44
+#      FDE                         : 2
+#      FDP                         : 2
+#      FDPE                        : 17
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 13
+#      IBUF                        : 7
+#      IBUFG                       : 1
+#      OBUF                        : 5
+# DLLs                             : 1
+#      CLKDLLE                     : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      380  out of   4656     8%  
+ Number of Slice Flip Flops:            128  out of   9312     1%  
+ Number of 4 input LUTs:                717  out of   9312     7%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)           | Load  |
+-----------------------------------+---------------------------------+-------+
+clock50MHz                         | theClkDivider/CLKDLLE_inst:CLKDV| 128   |
+-----------------------------------+---------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 126   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.239ns (Maximum Frequency: 235.897MHz)
+   Minimum input arrival time before clock: 6.526ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock50MHz'
+  Clock period: 4.239ns (frequency: 235.897MHz)
+  Total number of paths / destination ports: 4454 / 189
+-------------------------------------------------------------------------
+Delay:               8.478ns (Levels of Logic = 14)
+  Source:            Ball_Logic_Block/y_count_1 (FF)
+  Destination:       Ball_Display_Block/Ball (FF)
+  Source Clock:      clock50MHz rising 0.5X
+  Destination Clock: clock50MHz rising 0.5X
+
+  Data Path: Ball_Logic_Block/y_count_1 to Ball_Display_Block/Ball
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            26   0.514   1.223  Ball_Logic_Block/y_count_1 (Ball_Logic_Block/y_count_1)
+     LUT1:I0->O            1   0.612   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<1>_rt (Ball_Display_Block/Msub_Ball_addsub0008_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<1> (Ball_Display_Block/Msub_Ball_addsub0008_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<2> (Ball_Display_Block/Msub_Ball_addsub0008_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<3> (Ball_Display_Block/Msub_Ball_addsub0008_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<4> (Ball_Display_Block/Msub_Ball_addsub0008_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<5> (Ball_Display_Block/Msub_Ball_addsub0008_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<6> (Ball_Display_Block/Msub_Ball_addsub0008_cy<6>)
+     MUXCY:CI->O           0   0.051   0.000  Ball_Display_Block/Msub_Ball_addsub0008_cy<7> (Ball_Display_Block/Msub_Ball_addsub0008_cy<7>)
+     XORCY:CI->O           1   0.699   0.426  Ball_Display_Block/Msub_Ball_addsub0008_xor<8> (Ball_Display_Block/Ball_addsub0008<8>)
+     LUT2:I1->O            1   0.612   0.000  Ball_Display_Block/Mcompar_Ball_cmp_eq0002_lut<4> (Ball_Display_Block/Mcompar_Ball_cmp_eq0002_lut<4>)
+     MUXCY:S->O            1   0.752   0.360  Ball_Display_Block/Mcompar_Ball_cmp_eq0002_cy<4> (Ball_Display_Block/Mcompar_Ball_cmp_eq0002_cy<4>)
+     LUT4:I3->O            1   0.612   0.360  Ball_Display_Block/Ball_or00004 (Ball_Display_Block/Ball_or00004)
+     LUT4_L:I3->LO         1   0.612   0.103  Ball_Display_Block/Ball_or000010 (Ball_Display_Block/Ball_or000010)
+     LUT4:I3->O            1   0.612   0.000  Ball_Display_Block/Ball_or000050 (Ball_Display_Block/Ball_or0000)
+     FDC:D                     0.268          Ball_Display_Block/Ball
+    ----------------------------------------
+    Total                      8.478ns (6.006ns logic, 2.472ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock50MHz'
+  Total number of paths / destination ports: 523 / 110
+-------------------------------------------------------------------------
+Offset:              6.526ns (Levels of Logic = 13)
+  Source:            clear (PAD)
+  Destination:       Bat_Logic_Block/LeftBatCount_9 (FF)
+  Destination Clock: clock50MHz rising 0.5X
+
+  Data Path: clear to Bat_Logic_Block/LeftBatCount_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.106   1.075  clear_IBUF (clear_IBUF)
+     INV:I->O             20   0.612   0.937  Bat_Logic_Block/clear_inv1_INV_0 (Bat_Logic_Block/clear_inv)
+     MULT_AND:I1->LO       0   0.645   0.000  Bat_Logic_Block/Mcount_RightBatCount_mand (Bat_Logic_Block/Mcount_RightBatCount_mand)
+     MUXCY:DI->O           1   0.773   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<0> (Bat_Logic_Block/Mcount_RightBatCount_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<1> (Bat_Logic_Block/Mcount_RightBatCount_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<2> (Bat_Logic_Block/Mcount_RightBatCount_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<3> (Bat_Logic_Block/Mcount_RightBatCount_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<4> (Bat_Logic_Block/Mcount_RightBatCount_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<5> (Bat_Logic_Block/Mcount_RightBatCount_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<6> (Bat_Logic_Block/Mcount_RightBatCount_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<7> (Bat_Logic_Block/Mcount_RightBatCount_cy<7>)
+     MUXCY:CI->O           0   0.051   0.000  Bat_Logic_Block/Mcount_RightBatCount_cy<8> (Bat_Logic_Block/Mcount_RightBatCount_cy<8>)
+     XORCY:CI->O           1   0.699   0.000  Bat_Logic_Block/Mcount_RightBatCount_xor<9> (Bat_Logic_Block/Mcount_RightBatCount10)
+     FDCE:D                    0.268          Bat_Logic_Block/RightBatCount_9
+    ----------------------------------------
+    Total                      6.526ns (4.515ns logic, 2.011ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock50MHz'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            VideoSync_Block/vSync_sig (FF)
+  Destination:       vSync (PAD)
+  Source Clock:      clock50MHz rising 0.5X
+
+  Data Path: VideoSync_Block/vSync_sig to vSync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.514   0.357  VideoSync_Block/vSync_sig (VideoSync_Block/vSync_sig)
+     OBUF:I->O                 3.169          vSync_OBUF (vSync)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.84 secs
+ 
+--> 
+
+Total memory usage is 179024 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

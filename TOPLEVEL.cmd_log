@@ -1,0 +1,670 @@
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.xst" -ofn "H:/HET6004/LAB2/Pong_2/TOPLEVEL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spartan_3e_Board.ucf -p xc3s500e-fg320-5 TOPLEVEL.ngc TOPLEVEL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o TOPLEVEL_map.ncd TOPLEVEL.ngd TOPLEVEL.pcf 
+par -w -intstyle ise -ol high -t 1 TOPLEVEL_map.ncd TOPLEVEL.ncd TOPLEVEL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf Spartan_3e_Board.ucf 
+bitgen -intstyle ise -f TOPLEVEL.ut TOPLEVEL.ncd 

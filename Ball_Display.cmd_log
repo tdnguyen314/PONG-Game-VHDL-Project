@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/Ball_Display.xst" -ofn "H:/HET6004/LAB2/Pong_2/Ball_Display.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/Ball_Display.xst" -ofn "H:/HET6004/LAB2/Pong_2/Ball_Display.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/Ball_Display.xst" -ofn "H:/HET6004/LAB2/Pong_2/Ball_Display.syr" 
+xst -intstyle ise -ifn "H:/HET6004/LAB2/Pong_2/Ball_Display.xst" -ofn "H:/HET6004/LAB2/Pong_2/Ball_Display.syr" 

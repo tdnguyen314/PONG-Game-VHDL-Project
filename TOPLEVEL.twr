@@ -1,0 +1,685 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml TOPLEVEL.twx TOPLEVEL.ncd -o TOPLEVEL.twr TOPLEVEL.pcf -ucf
+Spartan_3e_Board.ucf
+
+Design file:              TOPLEVEL.ncd
+Physical constraint file: TOPLEVEL.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-11-18)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clock50MHz_IBUFG" PERIOD = 20 ns HIGH 40%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   7.500ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clock50MHz_IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+Slack: 12.500ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKIN
+  Logical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clock50MHz_IBUFG
+--------------------------------------------------------------------------------
+Slack: 15.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 12.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKIN
+  Logical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clock50MHz_IBUFG
+--------------------------------------------------------------------------------
+Slack: 16.365ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.635ns (275.103MHz) (Tdcmpc)
+  Physical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKIN
+  Logical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: clock50MHz_IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "theClkDivider/ClockDV" derived from 
+ NET "clock50MHz_IBUFG" PERIOD = 20 ns HIGH 40%;  multiplied by 2.00 to 40 nS 
+and duty cycle corrected to HIGH 20 nS  
+
+ 4454 paths analyzed, 452 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.481ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Ball_Display_Block/Ball (SLICE_X23Y65.F3), 231 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     29.519ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/y_count_0 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.475ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.006ns (0.076 - 0.082)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/y_count_0 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y64.YQ      Tcko                  0.567   Ball_Logic_Block/y_count<1>
+                                                       Ball_Logic_Block/y_count_0
+    SLICE_X1Y81.F4       net (fanout=12)       2.986   Ball_Logic_Block/y_count<0>
+    SLICE_X1Y81.COUT     Topcyf                1.011   Ball_Display_Block/Ball_addsub0013<0>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_lut<0>_INV_0
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<0>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<1>
+    SLICE_X1Y82.CIN      net (fanout=1)        0.000   Ball_Display_Block/Madd_Ball_addsub0013_cy<1>
+    SLICE_X1Y82.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_addsub0013<2>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<2>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<3>
+    SLICE_X1Y83.CIN      net (fanout=1)        0.000   Ball_Display_Block/Madd_Ball_addsub0013_cy<3>
+    SLICE_X1Y83.Y        Tciny                 0.756   Ball_Display_Block/Ball_addsub0013<4>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<4>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_xor<5>
+    SLICE_X3Y83.F2       net (fanout=1)        0.333   Ball_Display_Block/Ball_addsub0013<5>
+    SLICE_X3Y83.COUT     Topcyf                1.011   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<3>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_lut<2>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<2>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<3>
+    SLICE_X3Y84.CIN      net (fanout=1)        0.000   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<3>
+    SLICE_X3Y84.XB       Tcinxb                0.352   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<4>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<4>
+    SLICE_X23Y82.F1      net (fanout=1)        1.237   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<4>
+    SLICE_X23Y82.X       Tilo                  0.612   Ball_Display_Block/Ball_or000039
+                                                       Ball_Display_Block/Ball_or000039
+    SLICE_X23Y65.F3      net (fanout=1)        0.779   Ball_Display_Block/Ball_or000039
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.475ns (5.140ns logic, 5.335ns route)
+                                                       (49.1% logic, 50.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     29.587ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/y_count_0 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.407ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.006ns (0.076 - 0.082)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/y_count_0 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X42Y64.YQ      Tcko                  0.567   Ball_Logic_Block/y_count<1>
+                                                       Ball_Logic_Block/y_count_0
+    SLICE_X1Y81.F4       net (fanout=12)       2.986   Ball_Logic_Block/y_count<0>
+    SLICE_X1Y81.COUT     Topcyf                1.011   Ball_Display_Block/Ball_addsub0013<0>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_lut<0>_INV_0
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<0>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<1>
+    SLICE_X1Y82.CIN      net (fanout=1)        0.000   Ball_Display_Block/Madd_Ball_addsub0013_cy<1>
+    SLICE_X1Y82.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_addsub0013<2>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<2>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<3>
+    SLICE_X1Y83.CIN      net (fanout=1)        0.000   Ball_Display_Block/Madd_Ball_addsub0013_cy<3>
+    SLICE_X1Y83.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_addsub0013<4>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<4>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<5>
+    SLICE_X1Y84.CIN      net (fanout=1)        0.000   Ball_Display_Block/Madd_Ball_addsub0013_cy<5>
+    SLICE_X1Y84.Y        Tciny                 0.756   Ball_Display_Block/Ball_addsub0013<6>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_cy<6>
+                                                       Ball_Display_Block/Madd_Ball_addsub0013_xor<7>
+    SLICE_X3Y83.G4       net (fanout=1)        0.302   Ball_Display_Block/Ball_addsub0013<7>
+    SLICE_X3Y83.COUT     Topcyg                0.871   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<3>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_lut<3>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<3>
+    SLICE_X3Y84.CIN      net (fanout=1)        0.000   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<3>
+    SLICE_X3Y84.XB       Tcinxb                0.352   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<4>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<4>
+    SLICE_X23Y82.F1      net (fanout=1)        1.237   Ball_Display_Block/Mcompar_Ball_cmp_eq0006_cy<4>
+    SLICE_X23Y82.X       Tilo                  0.612   Ball_Display_Block/Ball_or000039
+                                                       Ball_Display_Block/Ball_or000039
+    SLICE_X23Y65.F3      net (fanout=1)        0.779   Ball_Display_Block/Ball_or000039
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.407ns (5.103ns logic, 5.304ns route)
+                                                       (49.0% logic, 51.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     29.609ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/y_count_5 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.373ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.018ns (0.076 - 0.094)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/y_count_5 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X34Y65.XQ      Tcko                  0.515   Ball_Logic_Block/y_count<5>
+                                                       Ball_Logic_Block/y_count_5
+    SLICE_X28Y74.G4      net (fanout=19)       3.482   Ball_Logic_Block/y_count<5>
+    SLICE_X28Y74.Y       Tilo                  0.660   N78
+                                                       Ball_Display_Block/Msub_Ball_addsub0011_xor<6>1_SW0
+    SLICE_X26Y77.F2      net (fanout=2)        0.619   N20
+    SLICE_X26Y77.X       Tilo                  0.660   Ball_Display_Block/Ball_addsub0011<6>
+                                                       Ball_Display_Block/Msub_Ball_addsub0011_xor<6>1
+    SLICE_X27Y81.G2      net (fanout=1)        0.284   Ball_Display_Block/Ball_addsub0011<6>
+    SLICE_X27Y81.COUT    Topcyg                0.871   Ball_Display_Block/Mcompar_Ball_cmp_eq0003_cy<3>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0003_lut<3>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0003_cy<3>
+    SLICE_X27Y82.CIN     net (fanout=1)        0.000   Ball_Display_Block/Mcompar_Ball_cmp_eq0003_cy<3>
+    SLICE_X27Y82.XB      Tcinxb                0.352   Ball_Display_Block/Madd_Ball_addsub0014_xor<8>131
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_eq0003_cy<4>
+    SLICE_X23Y82.F4      net (fanout=1)        0.811   Ball_Display_Block/Mcompar_Ball_cmp_eq0003_cy<4>
+    SLICE_X23Y82.X       Tilo                  0.612   Ball_Display_Block/Ball_or000039
+                                                       Ball_Display_Block/Ball_or000039
+    SLICE_X23Y65.F3      net (fanout=1)        0.779   Ball_Display_Block/Ball_or000039
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.373ns (4.398ns logic, 5.975ns route)
+                                                       (42.4% logic, 57.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Ball_Display_Block/Ball (SLICE_X23Y65.F2), 144 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     29.546ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/x_count_3 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.435ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.019ns (0.018 - 0.037)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/x_count_3 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y55.YQ      Tcko                  0.567   Ball_Logic_Block/x_count<2>
+                                                       Ball_Logic_Block/x_count_3
+    SLICE_X17Y34.G1      net (fanout=17)       2.475   Ball_Logic_Block/x_count<3>
+    SLICE_X17Y34.Y       Tilo                  0.612   Ball_Display_Block/Ball_addsub0010<8>
+                                                       Ball_Display_Block/Madd_Ball_addsub0010_xor<6>111
+    SLICE_X16Y33.G2      net (fanout=6)        0.366   Ball_Display_Block/N24
+    SLICE_X16Y33.Y       Tilo                  0.660   Ball_Display_Block/Ball_addsub0010<9>
+                                                       Ball_Display_Block/Madd_Ball_addsub0010_xor<8>111
+    SLICE_X16Y33.F3      net (fanout=2)        0.037   Ball_Display_Block/N7
+    SLICE_X16Y33.X       Tilo                  0.660   Ball_Display_Block/Ball_addsub0010<9>
+                                                       Ball_Display_Block/Madd_Ball_addsub0010_xor<9>11
+    SLICE_X17Y33.BY      net (fanout=1)        0.622   Ball_Display_Block/Ball_addsub0010<9>
+    SLICE_X17Y33.COUT    Tbycy                 0.845   Ball_Display_Block/Ball_cmp_le0003
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_le0003_cy<9>
+    SLICE_X19Y32.F2      net (fanout=1)        0.535   Ball_Display_Block/Ball_cmp_le0003
+    SLICE_X19Y32.X       Tilo                  0.612   Ball_Display_Block/Ball_or000041
+                                                       Ball_Display_Block/Ball_or000041
+    SLICE_X23Y65.F2      net (fanout=1)        1.716   Ball_Display_Block/Ball_or000041
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.435ns (4.684ns logic, 5.751ns route)
+                                                       (44.9% logic, 55.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     30.008ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/x_count_3 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      9.973ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.019ns (0.018 - 0.037)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/x_count_3 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y55.YQ      Tcko                  0.567   Ball_Logic_Block/x_count<2>
+                                                       Ball_Logic_Block/x_count_3
+    SLICE_X15Y33.G3      net (fanout=17)       3.130   Ball_Logic_Block/x_count<3>
+    SLICE_X15Y33.Y       Tilo                  0.612   Ball_Display_Block/Ball_addsub0009<8>
+                                                       Ball_Display_Block/Msub_Ball_addsub0009_xor<5>111
+    SLICE_X15Y33.F4      net (fanout=4)        0.058   Ball_Display_Block/N18
+    SLICE_X15Y33.X       Tilo                  0.612   Ball_Display_Block/Ball_addsub0009<8>
+                                                       Ball_Display_Block/Msub_Ball_addsub0009_xor<8>11
+    SLICE_X15Y32.F1      net (fanout=1)        0.136   Ball_Display_Block/Ball_addsub0009<8>
+    SLICE_X15Y32.COUT    Topcyf                1.011   Ball_Display_Block/Ball_cmp_ge0003
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0003_lut<8>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0003_cy<8>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0003_cy<9>
+    SLICE_X19Y32.F1      net (fanout=1)        0.791   Ball_Display_Block/Ball_cmp_ge0003
+    SLICE_X19Y32.X       Tilo                  0.612   Ball_Display_Block/Ball_or000041
+                                                       Ball_Display_Block/Ball_or000041
+    SLICE_X23Y65.F2      net (fanout=1)        1.716   Ball_Display_Block/Ball_or000041
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                      9.973ns (4.142ns logic, 5.831ns route)
+                                                       (41.5% logic, 58.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     30.229ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/x_count_2 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      9.752ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.019ns (0.018 - 0.037)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/x_count_2 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y55.XQ      Tcko                  0.515   Ball_Logic_Block/x_count<2>
+                                                       Ball_Logic_Block/x_count_2
+    SLICE_X17Y34.G3      net (fanout=15)       1.844   Ball_Logic_Block/x_count<2>
+    SLICE_X17Y34.Y       Tilo                  0.612   Ball_Display_Block/Ball_addsub0010<8>
+                                                       Ball_Display_Block/Madd_Ball_addsub0010_xor<6>111
+    SLICE_X16Y33.G2      net (fanout=6)        0.366   Ball_Display_Block/N24
+    SLICE_X16Y33.Y       Tilo                  0.660   Ball_Display_Block/Ball_addsub0010<9>
+                                                       Ball_Display_Block/Madd_Ball_addsub0010_xor<8>111
+    SLICE_X16Y33.F3      net (fanout=2)        0.037   Ball_Display_Block/N7
+    SLICE_X16Y33.X       Tilo                  0.660   Ball_Display_Block/Ball_addsub0010<9>
+                                                       Ball_Display_Block/Madd_Ball_addsub0010_xor<9>11
+    SLICE_X17Y33.BY      net (fanout=1)        0.622   Ball_Display_Block/Ball_addsub0010<9>
+    SLICE_X17Y33.COUT    Tbycy                 0.845   Ball_Display_Block/Ball_cmp_le0003
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_le0003_cy<9>
+    SLICE_X19Y32.F2      net (fanout=1)        0.535   Ball_Display_Block/Ball_cmp_le0003
+    SLICE_X19Y32.X       Tilo                  0.612   Ball_Display_Block/Ball_or000041
+                                                       Ball_Display_Block/Ball_or000041
+    SLICE_X23Y65.F2      net (fanout=1)        1.716   Ball_Display_Block/Ball_or000041
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                      9.752ns (4.632ns logic, 5.120ns route)
+                                                       (47.5% logic, 52.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Ball_Display_Block/Ball (SLICE_X23Y65.F4), 539 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     29.554ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/x_count_1 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.424ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.022ns (0.076 - 0.098)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/x_count_1 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y41.XQ      Tcko                  0.515   Ball_Logic_Block/x_count<1>
+                                                       Ball_Logic_Block/x_count_1
+    SLICE_X3Y53.F3       net (fanout=9)        2.525   Ball_Logic_Block/x_count<1>
+    SLICE_X3Y53.COUT     Topcyf                1.011   Ball_Display_Block/Ball_addsub0003<1>
+                                                       Ball_Logic_Block/x_count<1>_rt
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<1>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<2>
+    SLICE_X3Y54.CIN      net (fanout=1)        0.000   Ball_Display_Block/Msub_Ball_addsub0003_cy<2>
+    SLICE_X3Y54.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_addsub0003<3>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<3>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<4>
+    SLICE_X3Y55.CIN      net (fanout=1)        0.000   Ball_Display_Block/Msub_Ball_addsub0003_cy<4>
+    SLICE_X3Y55.Y        Tciny                 0.756   Ball_Display_Block/Ball_addsub0003<5>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<5>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_xor<6>
+    SLICE_X1Y56.F1       net (fanout=1)        0.420   Ball_Display_Block/Ball_addsub0003<6>
+    SLICE_X1Y56.COUT     Topcyf                1.011   Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<7>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_lut<6>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<6>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<7>
+    SLICE_X1Y57.CIN      net (fanout=1)        0.000   Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<7>
+    SLICE_X1Y57.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_cmp_ge0001
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<8>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<9>
+    SLICE_X12Y56.F3      net (fanout=1)        0.754   Ball_Display_Block/Ball_cmp_ge0001
+    SLICE_X12Y56.X       Tilo                  0.660   N26
+                                                       Ball_Display_Block/Ball_or00009_SW0
+    SLICE_X23Y65.G1      net (fanout=1)        1.206   N26
+    SLICE_X23Y65.Y       Tilo                  0.612   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000010
+    SLICE_X23Y65.F4      net (fanout=1)        0.020   Ball_Display_Block/Ball_or000010/O
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.424ns (5.499ns logic, 4.925ns route)
+                                                       (52.8% logic, 47.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     29.670ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/x_count_1 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.308ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.022ns (0.076 - 0.098)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/x_count_1 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y41.XQ      Tcko                  0.515   Ball_Logic_Block/x_count<1>
+                                                       Ball_Logic_Block/x_count_1
+    SLICE_X3Y53.F3       net (fanout=9)        2.525   Ball_Logic_Block/x_count<1>
+    SLICE_X3Y53.COUT     Topcyf                1.011   Ball_Display_Block/Ball_addsub0003<1>
+                                                       Ball_Logic_Block/x_count<1>_rt
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<1>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<2>
+    SLICE_X3Y54.CIN      net (fanout=1)        0.000   Ball_Display_Block/Msub_Ball_addsub0003_cy<2>
+    SLICE_X3Y54.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_addsub0003<3>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<3>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<4>
+    SLICE_X3Y55.CIN      net (fanout=1)        0.000   Ball_Display_Block/Msub_Ball_addsub0003_cy<4>
+    SLICE_X3Y55.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_addsub0003<5>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<5>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<6>
+    SLICE_X3Y56.CIN      net (fanout=1)        0.000   Ball_Display_Block/Msub_Ball_addsub0003_cy<6>
+    SLICE_X3Y56.Y        Tciny                 0.756   Ball_Display_Block/Ball_addsub0003<7>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<7>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_xor<8>
+    SLICE_X1Y57.F4       net (fanout=1)        0.304   Ball_Display_Block/Ball_addsub0003<8>
+    SLICE_X1Y57.COUT     Topcyf                1.011   Ball_Display_Block/Ball_cmp_ge0001
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_lut<8>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<8>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<9>
+    SLICE_X12Y56.F3      net (fanout=1)        0.754   Ball_Display_Block/Ball_cmp_ge0001
+    SLICE_X12Y56.X       Tilo                  0.660   N26
+                                                       Ball_Display_Block/Ball_or00009_SW0
+    SLICE_X23Y65.G1      net (fanout=1)        1.206   N26
+    SLICE_X23Y65.Y       Tilo                  0.612   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000010
+    SLICE_X23Y65.F4      net (fanout=1)        0.020   Ball_Display_Block/Ball_or000010/O
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.308ns (5.499ns logic, 4.809ns route)
+                                                       (53.3% logic, 46.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     29.670ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Ball_Logic_Block/x_count_1 (FF)
+  Destination:          Ball_Display_Block/Ball (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      10.308ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.022ns (0.076 - 0.098)
+  Source Clock:         clock_s rising at 0.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Ball_Logic_Block/x_count_1 to Ball_Display_Block/Ball
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y41.XQ      Tcko                  0.515   Ball_Logic_Block/x_count<1>
+                                                       Ball_Logic_Block/x_count_1
+    SLICE_X3Y53.F3       net (fanout=9)        2.525   Ball_Logic_Block/x_count<1>
+    SLICE_X3Y53.COUT     Topcyf                1.011   Ball_Display_Block/Ball_addsub0003<1>
+                                                       Ball_Logic_Block/x_count<1>_rt
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<1>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<2>
+    SLICE_X3Y54.CIN      net (fanout=1)        0.000   Ball_Display_Block/Msub_Ball_addsub0003_cy<2>
+    SLICE_X3Y54.Y        Tciny                 0.756   Ball_Display_Block/Ball_addsub0003<3>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_cy<3>
+                                                       Ball_Display_Block/Msub_Ball_addsub0003_xor<4>
+    SLICE_X1Y55.F4       net (fanout=1)        0.304   Ball_Display_Block/Ball_addsub0003<4>
+    SLICE_X1Y55.COUT     Topcyf                1.011   Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<5>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_lut<4>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<4>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<5>
+    SLICE_X1Y56.CIN      net (fanout=1)        0.000   Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<5>
+    SLICE_X1Y56.COUT     Tbyp                  0.103   Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<7>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<6>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<7>
+    SLICE_X1Y57.CIN      net (fanout=1)        0.000   Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<7>
+    SLICE_X1Y57.COUT     Tbyp                  0.103   Ball_Display_Block/Ball_cmp_ge0001
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<8>
+                                                       Ball_Display_Block/Mcompar_Ball_cmp_ge0001_cy<9>
+    SLICE_X12Y56.F3      net (fanout=1)        0.754   Ball_Display_Block/Ball_cmp_ge0001
+    SLICE_X12Y56.X       Tilo                  0.660   N26
+                                                       Ball_Display_Block/Ball_or00009_SW0
+    SLICE_X23Y65.G1      net (fanout=1)        1.206   N26
+    SLICE_X23Y65.Y       Tilo                  0.612   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000010
+    SLICE_X23Y65.F4      net (fanout=1)        0.020   Ball_Display_Block/Ball_or000010/O
+    SLICE_X23Y65.CLK     Tfck                  0.728   Ball_Display_Block/Ball
+                                                       Ball_Display_Block/Ball_or000050
+                                                       Ball_Display_Block/Ball
+    -------------------------------------------------  ---------------------------
+    Total                                     10.308ns (5.499ns logic, 4.809ns route)
+                                                       (53.3% logic, 46.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "theClkDivider/ClockDV" derived from
+ NET "clock50MHz_IBUFG" PERIOD = 20 ns HIGH 40%;
+ multiplied by 2.00 to 40 nS and duty cycle corrected to HIGH 20 nS 
+
+--------------------------------------------------------------------------------
+
+Paths for end point Court_Display_Block/Colour_s_1 (SLICE_X46Y55.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.194ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               VideoSync_Block/blank_sig (FF)
+  Destination:          Court_Display_Block/Colour_s_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.188ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.006ns (0.020 - 0.026)
+  Source Clock:         clock_s rising at 40.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: VideoSync_Block/blank_sig to Court_Display_Block/Colour_s_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y55.XQ      Tcko                  0.411   VideoSync_Block/blank_sig
+                                                       VideoSync_Block/blank_sig
+    SLICE_X46Y55.F4      net (fanout=3)        0.290   VideoSync_Block/blank_sig
+    SLICE_X46Y55.CLK     Tckf        (-Th)    -0.487   Court_Display_Block/Colour_s<1>
+                                                       Court_Display_Block/Colour_s_mux0006<1>24
+                                                       Court_Display_Block/Colour_s_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.188ns (0.898ns logic, 0.290ns route)
+                                                       (75.6% logic, 24.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point State_Machine_Block/l_score_1 (SLICE_X37Y45.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.306ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               State_Machine_Block/l_score_1 (FF)
+  Destination:          State_Machine_Block/l_score_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.306ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clock_s rising at 40.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: State_Machine_Block/l_score_1 to State_Machine_Block/l_score_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y45.XQ      Tcko                  0.411   State_Machine_Block/l_score<1>
+                                                       State_Machine_Block/l_score_1
+    SLICE_X37Y45.F4      net (fanout=32)       0.447   State_Machine_Block/l_score<1>
+    SLICE_X37Y45.CLK     Tckf        (-Th)    -0.448   State_Machine_Block/l_score<1>
+                                                       State_Machine_Block/Mcount_l_score_xor<1>11
+                                                       State_Machine_Block/l_score_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.306ns (0.859ns logic, 0.447ns route)
+                                                       (65.8% logic, 34.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point State_Machine_Block/l_score_3 (SLICE_X38Y44.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.357ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               State_Machine_Block/l_score_3 (FF)
+  Destination:          State_Machine_Block/l_score_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.357ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clock_s rising at 40.000ns
+  Destination Clock:    clock_s rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: State_Machine_Block/l_score_3 to State_Machine_Block/l_score_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X38Y44.XQ      Tcko                  0.412   State_Machine_Block/l_score<3>
+                                                       State_Machine_Block/l_score_3
+    SLICE_X38Y44.BX      net (fanout=28)       0.427   State_Machine_Block/l_score<3>
+    SLICE_X38Y44.CLK     Tckdi       (-Th)    -0.518   State_Machine_Block/l_score<3>
+                                                       State_Machine_Block/Mcount_l_score_xor<3>1_f5
+                                                       State_Machine_Block/l_score_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.357ns (0.930ns logic, 0.427ns route)
+                                                       (68.5% logic, 31.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "theClkDivider/ClockDV" derived from
+ NET "clock50MHz_IBUFG" PERIOD = 20 ns HIGH 40%;
+ multiplied by 2.00 to 40 nS and duty cycle corrected to HIGH 20 nS 
+
+--------------------------------------------------------------------------------
+Slack: 34.546ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 5.454ns (183.352MHz) (Tdcmpdv)
+  Physical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKDV
+  Logical resource: theClkDivider/CLKDLLE_inst/DCM_SP/CLKDV
+  Location pin: DCM_X0Y1.CLKDV
+  Clock network: theClkDivider/ClockDV
+--------------------------------------------------------------------------------
+Slack: 38.562ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 0.719ns (Tcl)
+  Physical resource: State_Machine_Block/State_FSM_FFd2/CLK
+  Logical resource: State_Machine_Block/State_FSM_FFd2/CK
+  Location pin: SLICE_X40Y47.CLK
+  Clock network: clock_s
+--------------------------------------------------------------------------------
+Slack: 38.562ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
+  High pulse limit: 0.719ns (Tch)
+  Physical resource: State_Machine_Block/State_FSM_FFd2/CLK
+  Logical resource: State_Machine_Block/State_FSM_FFd2/CK
+  Location pin: SLICE_X40Y47.CLK
+  Clock network: clock_s
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for clock50MHz_IBUFG
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|clock50MHz_IBUFG               |     20.000ns|      7.500ns|      5.240ns|            0|            0|            0|         4454|
+| theClkDivider/ClockDV         |     40.000ns|     10.481ns|          N/A|            0|            0|         4454|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clock50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock50MHz     |   10.481|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4454 paths, 0 nets, and 2179 connections
+
+Design statistics:
+   Minimum period:  10.481ns{1}   (Maximum frequency:  95.411MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Oct 31 15:47:33 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 111 MB
+
+
+

@@ -1,0 +1,28 @@
+Command line:
+   Testbench_Pong_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1934
+
+Thu Oct 11 17:00:43 2012
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 626.037 Meg
+
+ Total Signals          : 232
+ Total Nets             : 251
+ Total Signal Drivers   : 96
+ Total Blocks           : 25
+ Total Primitive Blocks : 21
+ Total Processes        : 60
+ Total Traceable Variables  : 168
+ Total Scalar Nets and Variables : 4950
+
+ Total Simulation Time: 2.70313 sec
+
+ Current Memory Usage: 468.75 Meg
+
+Thu Oct 11 17:11:30 2012
+

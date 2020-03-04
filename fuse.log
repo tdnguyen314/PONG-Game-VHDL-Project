@@ -1,0 +1,53 @@
+Running: C:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o H:/HET6004/LAB2/Pong_2/Testbench_Pong_isim_beh.exe -prj H:/HET6004/LAB2/Pong_2/Testbench_Pong_beh.prj work.Testbench_Pong 
+ISim M.81d (signature 0xcb73ee62)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Initialization.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Wall_Display.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/VGA_Timing.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/State_Machine.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Row_Column_Counter.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Court_Display.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Clock_Divider.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Bat_Logic.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Bat_Display.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Ball_Logic.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Ball_Display.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/TOPLEVEL.vhd" into library work
+Parsing VHDL file "H:/HET6004/LAB2/Pong_2/Testbench_Pong.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 80840 KB
+Fuse CPU Usage: 249 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package initialization
+Compiling package vcomponents
+Compiling package vpkg
+Compiling architecture clkdlle_maximum_period_check_v of entity clkdlle_maximum_period_check [\clkdlle_maximum_period_check("C...]
+Compiling architecture clkdlle_v of entity clkdlle [\CLKDLLE(2.0,true,"1100000010000...]
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture behavioral of entity clockdivider [clockdivider_default]
+Compiling architecture behavioral of entity row_column_counter [row_column_counter_default]
+Compiling architecture behavioral of entity videosync [videosync_default]
+Compiling architecture behavioral of entity court_display [court_display_default]
+Compiling architecture behavioral of entity wall_display [wall_display_default]
+Compiling architecture behavioral of entity bat_display [bat_display_default]
+Compiling architecture behavioral of entity bat_logic [bat_logic_default]
+Compiling architecture behavioral of entity ball_display [ball_display_default]
+Compiling architecture behavioral of entity ball_logic [ball_logic_default]
+Compiling architecture behavioral of entity state_machine [state_machine_default]
+Compiling architecture behavioral of entity toplevel [toplevel_default]
+Compiling architecture behavior of entity testbench_pong
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 39 VHDL Units
+Built simulation executable H:/HET6004/LAB2/Pong_2/Testbench_Pong_isim_beh.exe
+Fuse Memory Usage: 95052 KB
+Fuse CPU Usage: 452 ms
